@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guilherme Fontana | Portfólio</title>
+<meta name="description" content="Guilherme Fontana. Ciência da Computação na UFPR. IA, segurança e dados.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="orbes" aria-hidden="true"></canvas>
+<div class="cursor" aria-hidden="true"></div>
+
+<div class="rolagem" aria-hidden="true"><i id="knob"></i></div>
+
+<header class="topo">
+  <a class="logo" href="#inicio" aria-label="Início"><i></i></a>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#stack">Stack</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#interesses">Interesses</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<main>
+  <!-- INÍCIO -->
+  <section id="inicio" class="hero">
+    <p class="oi">Ciência da Computação · UFPR</p>
+    <h1 aria-label="Guilherme Fontana">
+      <span class="linha" data-letras aria-hidden="true">Guilherme</span>
+      <span class="linha l2" data-letras aria-hidden="true">Fontana</span>
+    </h1>
+    <ul class="pilulas">
+      <li style="--n:0">Computação</li><li style="--n:1">IA</li><li style="--n:2">Segurança</li><li style="--n:3">Dados</li>
+    </ul>
+    <a class="cue" href="#sobre" aria-label="Rolar para baixo"><span>↓</span></a>
+  </section>
+
+  <!-- FAIXA QUE CORRE COM A ROLAGEM -->
+  <div class="faixa" aria-hidden="true">
+    <div class="trilho" id="trilho-faixa">
+      <span>Python</span><i></i><span class="cheio">C</span><i></i><span>SQL</span><i></i><span class="cheio">FastAPI</span><i></i><span>PostgreSQL</span><i></i><span class="cheio">Git</span><i></i><span>Linux</span><i></i>
+    </div>
+  </div>
+
+  <!-- MANIFESTO: as palavras acendem com a rolagem -->
+  <section id="sobre" class="manifesto">
+    <div class="pin">
+      <p class="texto" id="texto">Estudo <b>Ciência da Computação</b> na UFPR. Meu mundo é <b>inteligência artificial</b>, <b>segurança</b> e <b>dados</b>. Aprendo <b>construindo</b>.</p>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section id="stack" class="stack">
+    <h2 data-split>O que eu uso</h2>
+    <p class="dica reveal">Passe o mouse. Clique.</p>
+    <div class="nuvem">
+      <div class="chip" style="--s:170px;--n:0"><span class="bola t-vidro">Python</span></div>
+      <div class="chip" style="--s:150px;--n:1"><span class="bola t-listra">C</span></div>
+      <div class="chip" style="--s:120px;--n:2"><span class="bola t-bolha">SQL</span></div>
+      <div class="chip" style="--s:160px;--n:3"><span class="bola t-ponto">FastAPI</span></div>
+      <div class="chip" style="--s:140px;--n:4"><span class="bola t-disco">PostgreSQL</span></div>
+      <div class="chip" style="--s:100px;--n:5"><span class="bola t-lima">Git</span></div>
+      <div class="chip" style="--s:130px;--n:6"><span class="bola t-vidro">Linux</span></div>
+      <div class="chip" style="--s:175px;--n:7"><span class="bola t-bolha">Estruturas de dados</span></div>
+      <div class="chip" style="--s:135px;--n:8"><span class="bola t-listra">Algoritmos</span></div>
+      <div class="chip" style="--s:105px;--n:9"><span class="bola t-ponto">JWT</span></div>
+      <div class="chip" style="--s:110px;--n:10"><span class="bola t-disco">Figma</span></div>
+    </div>
+  </section>
+
+  <!-- PROJETOS: a rolagem vertical anda na horizontal -->
+  <section id="projetos" class="projetos">
+    <div class="pin">
+      <div class="trilha" id="trilha">
+        <div class="intro-proj">
+          <h2 data-split>Projetos</h2>
+          <p class="seguir">role <span>→</span></p>
+        </div>
+
+        <a class="card" href="https://github.com/GJorge07/safA.AI" target="_blank" rel="noopener">
+          <span class="n">01</span>
+          <span class="orbe"><span class="esf t-bolha"></span></span>
+          <h3>Safa.IA</h3>
+          <p>Lê contratos de honorários e mostra quanto e quando o advogado vai receber. Hackathon OAB-PR.</p>
+          <ul class="tags"><li>TypeScript</li><li>IA</li><li>PostgreSQL</li></ul>
+          <span class="abrir">↗</span>
+        </a>
+
+        <a class="card" href="https://github.com/fontanagui/gerenciador-de-tarefas" target="_blank" rel="noopener">
+          <span class="n">02</span>
+          <span class="orbe"><span class="esf t-vidro"></span></span>
+          <h3>Gerenciador de Tarefas</h3>
+          <p>API REST com FastAPI, PostgreSQL e login com JWT.</p>
+          <ul class="tags"><li>Python</li><li>FastAPI</li><li>PostgreSQL</li></ul>
+          <span class="abrir">↗</span>
+        </a>
+
+        <a class="card" href="https://github.com/fontanagui/theboys" target="_blank" rel="noopener">
+          <span class="n">03</span>
+          <span class="orbe"><span class="esf t-listra"></span></span>
+          <h3>The Boys</h3>
+          <p>Simulação por eventos de heróis, bases e missões, em C.</p>
+          <ul class="tags"><li>C</li><li>Fila de prioridade</li></ul>
+          <span class="abrir">↗</span>
+        </a>
+
+        <a class="card" href="https://github.com/fontanagui/supergui" target="_blank" rel="noopener">
+          <span class="n">04</span>
+          <span class="orbe"><span class="esf t-disco"></span></span>
+          <h3>SuperGui Adventure</h3>
+          <p>Jogo de plataforma 2D em C com Allegro 5.</p>
+          <ul class="tags"><li>C</li><li>Allegro 5</li></ul>
+          <span class="abrir">↗</span>
+        </a>
+
+        <a class="mais" href="https://github.com/fontanagui" target="_blank" rel="noopener">
+          <span class="bola t-lima">Ver tudo no GitHub ↗</span>
+        </a>
+      </div>
+      <div class="prog-proj"><i id="prog-proj"></i></div>
+    </div>
+  </section>
+
+  <!-- INTERESSES -->
+  <section id="interesses" class="interesses">
+    <div class="linha-int">
+      <span class="mini t-vidro"></span>
+      <h3>Inteligência artificial</h3>
+      <p>O que mais me move. Modelos, dados e o que dá para construir com eles.</p>
+    </div>
+    <div class="linha-int">
+      <span class="mini t-disco"></span>
+      <h3>Música</h3>
+      <p>House e a cultura dos discos.</p>
+    </div>
+    <div class="linha-int">
+      <span class="mini t-listra"></span>
+      <h3>Vasco da Gama</h3>
+      <p>Vascaíno de coração.</p>
+    </div>
+    <div class="linha-int">
+      <span class="mini t-ponto"></span>
+      <h3>Segurança e dados</h3>
+      <p>Como os sistemas se protegem e o que os dados revelam.</p>
+    </div>
+    <div class="linha-int">
+      <span class="mini t-bolha"></span>
+      <h3>Código competitivo</h3>
+      <p>ICPC e a graça de achar a solução mais eficiente.</p>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="contato">
+    <h2 class="grande" aria-label="Vamos conversar?">
+      <span class="linha" data-letras aria-hidden="true">Vamos</span>
+      <span class="linha l2" data-letras aria-hidden="true">conversar?</span>
+    </h2>
+    <div class="bcs">
+      <a class="bc" href="mailto:guilherme.fontana@ufpr.br"><span class="bola t-vidro">Email</span></a>
+      <a class="bc" href="https://github.com/fontanagui" target="_blank" rel="noopener"><span class="bola t-disco">GitHub</span></a>
+      <a class="bc" href="https://br.linkedin.com/in/fontanagui" target="_blank" rel="noopener"><span class="bola t-bolha">LinkedIn</span></a>
+    </div>
+    <p class="email">guilherme.fontana@ufpr.br</p>
+  </section>
+</main>
+
+<footer>© <span id="ano"></span> Guilherme Fontana</footer>
+<script src="script.js"></script>
+</body>
+</html>
